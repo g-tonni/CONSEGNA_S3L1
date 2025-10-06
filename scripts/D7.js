@@ -62,8 +62,11 @@ console.log('ESERCIZIO 3')
 
 const n = [3, 7, 35, 67, 80, 90, 85, 73, 54, 33]
 
-const pari = n.filter((arr) => arr % 2 === 0)
-console.log(pari)
+const pariAuto = (arr) => {
+  const pari = arr.filter((elemento) => elemento % 2 === 0)
+  return pari
+}
+console.log(pariAuto(n))
 
 console.log('')
 
@@ -73,13 +76,14 @@ Scrivi una funzione per sommare i numeri contenuti in un array
 
 console.log('ESERCIZIO 4')
 
-let somma = 0
-
-n.forEach((element) => {
-  somma = somma + element
-})
-console.log(somma)
-
+const somma = (arr) => {
+  let sommaI = 0
+  arr.forEach((element) => {
+    sommaI = sommaI + element
+  })
+  return sommaI
+}
+console.log(somma(n))
 console.log('')
 
 /* ESERCIZIO 5 (reduce)
@@ -87,7 +91,15 @@ console.log('')
 */
 
 console.log('ESERCIZIO 5')
-console.log('REDUCE')
+
+const sommaReduce = (arr) => {
+  const somma = arr.reduce((acc, elem) => {
+    return acc + elem
+  }, 0)
+  return somma
+}
+console.log(sommaReduce(n))
+
 console.log('')
 
 /* ESERCIZIO 6 (map)
@@ -253,6 +265,17 @@ const movies = [
 
 console.log('ESERCIZIO 9')
 
+const vecchio = (arr) => {
+  let puntoRiferimento = arr[0]
+  arr.forEach((elemento) => {
+    if (Number(elemento.Year) < Number(puntoRiferimento.Year)) {
+      puntoRiferimento = elemento
+    }
+  })
+  return puntoRiferimento
+}
+console.log(vecchio(movies))
+
 console.log('')
 
 /* ESERCIZIO 10
@@ -295,7 +318,13 @@ console.log('')
 
 console.log('ESERCIZIO 13')
 
-console.log('REDUCE')
+const sommaAnni = (arr) => {
+  const sommaAnniReduce = arr.reduce((acc, elem) => {
+    return acc + Number(elem.Year)
+  }, 0)
+  return sommaAnniReduce
+}
+console.log(sommaAnni(movies))
 
 console.log('')
 
@@ -305,16 +334,24 @@ Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzi
 
 console.log('ESERCIZIO 14')
 
-console.log('FIND')
+const findAMovie = (arr, id) => {
+  const risultato = arr.find((elemento) => elemento.imdbID === id)
+  return risultato
+}
+console.log(findAMovie(movies, 'tt0120737'))
 
 console.log('')
 
-/* ESERCIZIO 15 (findIndex)
+/* ESERCIZIO 15 (findIndex) // TORNA UNA POSIZIONE E NON IL FILM IN SE'
 Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
 */
 
 console.log('ESERCIZIO 15')
 
-console.log('FINDINDEX')
+const findAMovie2 = (arr, year) => {
+  const risultato = arr.findIndex((elemento) => elemento.Year === year)
+  return risultato
+}
+console.log(findAMovie2(movies, '2018'))
 
 console.log('')
