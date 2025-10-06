@@ -3,34 +3,120 @@
   prima e gli ultimi 3 della seconda. Converti la stringa risultante in maiuscolo e mostrala con un console.log().
 */
 
+console.log('ESERCIZIO 1')
+
+let p1 = 'poltrona'
+let p2 = 'antenna'
+
+let ps1 = []
+let ps2 = []
+
+const parolaScomposta = (arr1, parola1, arr2, parola2) => {
+  let primeLettere = []
+  let primeLettere2 = []
+  arr1 = parola1.split('')
+  // console.log(arr1)
+  arr2 = parola2.split('')
+  // console.log(arr2)
+  for (let i = 0; i <= 1; i++) {
+    primeLettere.push(arr1[i])
+  }
+  for (let i = arr2.length - 3; i < arr2.length; i++) {
+    primeLettere2.push(arr2[i])
+  }
+  parola1 = primeLettere.join('')
+  parola2 = primeLettere2.join('')
+  let parolaFinale = `${parola1}${parola2}`
+  // console.log(parolaFinale)
+  parolaFinale = parolaFinale.toUpperCase()
+  console.log(parolaFinale)
+}
+
+parolaScomposta(ps1, p1, ps2, p2)
+
+console.log('')
+
 /* ESERCIZIO 2 (for)
-  Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
+Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
+
+console.log('ESERCIZIO 2')
+
+const nRandom = () => {
+  let random10 = []
+  for (let i = 0; i < 10; i++) {
+    random10.push(Math.floor(Math.random() * 101))
+  }
+  return random10
+}
+
+console.log(nRandom())
+
+console.log('')
 
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
 
+console.log('ESERCIZIO 3')
+
+const n = [3, 7, 35, 67, 80, 90, 85, 73, 54, 33]
+
+const pari = n.filter((arr) => arr % 2 === 0)
+console.log(pari)
+
+console.log('')
+
 /* ESERCIZIO 4 (forEach)
-  Scrivi una funzione per sommare i numeri contenuti in un array
+Scrivi una funzione per sommare i numeri contenuti in un array
 */
+
+console.log('ESERCIZIO 4')
+
+let somma = 0
+
+n.forEach((element) => {
+  somma = somma + element
+})
+console.log(somma)
+
+console.log('')
 
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
+console.log('ESERCIZIO 5')
+
+console.log('')
+
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
+
+console.log('ESERCIZIO 6')
+
+let sommaN = n.map((arrN, n) => arrN + n)
+console.log(sommaN)
+
+console.log('')
 
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
 
+console.log('ESERCIZIO 7')
+
+console.log('')
+
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
+
+console.log('ESERCIZIO 8')
+
+console.log('')
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
@@ -152,26 +238,54 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
+console.log('ESERCIZIO 1')
+
+console.log('')
+
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
+
+console.log('ESERCIZIO 1')
+
+console.log('')
 
 /* ESERCIZIO 11 (map)
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
 
+console.log('ESERCIZIO 1')
+
+console.log('')
+
 /* ESERCIZIO 12 (filter)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
+
+console.log('ESERCIZIO 1')
+
+console.log('')
 
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
 
+console.log('ESERCIZIO 1')
+
+console.log('')
+
 /* ESERCIZIO 14 (find)
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
 
+console.log('ESERCIZIO 1')
+
+console.log('')
+
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
 */
+
+console.log('ESERCIZIO 1')
+
+console.log('')
