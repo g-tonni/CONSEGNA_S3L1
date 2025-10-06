@@ -87,7 +87,7 @@ console.log('')
 */
 
 console.log('ESERCIZIO 5')
-
+console.log('REDUCE')
 console.log('')
 
 /* ESERCIZIO 6 (map)
@@ -120,6 +120,14 @@ console.log('')
 */
 
 console.log('ESERCIZIO 8')
+
+let dispari = []
+for (let i = 0; i <= 99; i++) {
+  if (i % 2 === 1) {
+    dispari.push(i)
+  }
+}
+console.log(dispari)
 
 console.log('')
 
@@ -253,6 +261,9 @@ console.log('')
 
 console.log('ESERCIZIO 10')
 
+let nFilm = (arr) => arr.length
+console.log(nFilm(movies))
+
 console.log('')
 
 /* ESERCIZIO 11 (map)
@@ -260,6 +271,9 @@ console.log('')
 */
 
 console.log('ESERCIZIO 11')
+
+let nomiFilm = movies.map((elemento) => elemento.Title)
+console.log(nomiFilm)
 
 console.log('')
 
