@@ -96,8 +96,8 @@ console.log('')
 
 console.log('ESERCIZIO 6')
 
-let sommaN = n.map((arrN, n) => arrN + n)
-console.log(sommaN)
+let sommaN = (arr, n) => arr.map((elemento) => elemento + n)
+console.log(sommaN(n, 5))
 
 console.log('')
 
@@ -107,6 +107,11 @@ console.log('')
 */
 
 console.log('ESERCIZIO 7')
+
+const lParole = ['ciao', 'sono', 'giada', 'e', 'odio', 'map']
+
+const nLettere = lParole.map((elemento) => elemento.length)
+console.log(nLettere)
 
 console.log('')
 
@@ -238,7 +243,7 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
-console.log('ESERCIZIO 1')
+console.log('ESERCIZIO 9')
 
 console.log('')
 
@@ -246,7 +251,7 @@ console.log('')
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
 
-console.log('ESERCIZIO 1')
+console.log('ESERCIZIO 10')
 
 console.log('')
 
@@ -254,7 +259,7 @@ console.log('')
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
 
-console.log('ESERCIZIO 1')
+console.log('ESERCIZIO 11')
 
 console.log('')
 
@@ -262,7 +267,7 @@ console.log('')
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
 
-console.log('ESERCIZIO 1')
+console.log('ESERCIZIO 12')
 
 console.log('')
 
@@ -270,7 +275,7 @@ console.log('')
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
 
-console.log('ESERCIZIO 1')
+console.log('ESERCIZIO 13')
 
 console.log('')
 
@@ -278,7 +283,7 @@ console.log('')
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
 
-console.log('ESERCIZIO 1')
+console.log('ESERCIZIO 14')
 
 console.log('')
 
@@ -286,6 +291,6 @@ console.log('')
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
 */
 
-console.log('ESERCIZIO 1')
+console.log('ESERCIZIO 15')
 
 console.log('')
