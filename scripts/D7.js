@@ -283,6 +283,10 @@ console.log('')
 
 console.log('ESERCIZIO 12')
 
+const film2000 = (arr) =>
+  arr.filter((elemento) => Number(elemento.Year) >= 2000)
+console.log(film2000(movies))
+
 console.log('')
 
 /* ESERCIZIO 13 (reduce)
@@ -291,20 +295,26 @@ console.log('')
 
 console.log('ESERCIZIO 13')
 
+console.log('REDUCE')
+
 console.log('')
 
 /* ESERCIZIO 14 (find)
-  Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
+Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
 
 console.log('ESERCIZIO 14')
 
+console.log('FIND')
+
 console.log('')
 
 /* ESERCIZIO 15 (findIndex)
-  Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
+Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
 */
 
 console.log('ESERCIZIO 15')
+
+console.log('FINDINDEX')
 
 console.log('')
